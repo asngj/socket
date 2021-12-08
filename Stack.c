@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
- 
+
+
  #define QUEUE_CAPACITY 3
  typedef struct tag_queue
  {
  	int *pQueue;
 	int head;
 	int tail;
-	int length;
+	unsigned int length;
  }LineQueue;
 int InitQueue(LineQueue **myQueue);
  int QueueFull(LineQueue *myQueue);
